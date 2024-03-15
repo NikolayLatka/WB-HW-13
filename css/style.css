@@ -28,7 +28,11 @@ body {
 /* HEADER */
 
 .header {
-  margin-bottom: 200px;
+  background-color: var(--main-background-color);
+}
+
+.header-flex {
+  display: flex;
 }
 
 .header-logo,
@@ -106,6 +110,8 @@ span {
 
 .hero {
   margin-bottom: 94px;
+  text-align: center;
+  background-color: var(--second-background-color);
 }
 
 .hero-title {
@@ -116,8 +122,7 @@ span {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  margin-top: 200px;
+  color: var(--main-background-color);
 }
 
 .hero-button {
@@ -125,14 +130,15 @@ span {
   font-size: 16px;
   font-weight: 700;
   line-height: calc(30 / 16);
-  margin-bottom: 200px;
   width: 216px;
   height: 50px;
-  margin-left: 492px;
-  margin-right: 492px;
 }
 
 /* INFORMATION */
+
+.information, .work {
+  background-color: var(--main-background-color);
+}
 
 .information-name {
   color: var(--main-text-color);
@@ -146,6 +152,7 @@ span {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 94px;
+  justify-content: center;
 }
 
 .information-item {
@@ -189,6 +196,7 @@ span {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 94px;
+  justify-content: center;
 }
 
 .work-item:not(:last-child) {
@@ -199,6 +207,7 @@ span {
 
 .team {
   margin-bottom: 60px;
+  background-color: var(--team-background-color);
 }
 
 .team-name {
@@ -213,6 +222,7 @@ span {
   margin-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 
 .team-item {
@@ -222,6 +232,10 @@ span {
 
 .team-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-figure {
+  text-align: center;
 }
 
 .team-caption {
@@ -239,6 +253,12 @@ span {
 }
 
 /* FOOTER */
+
+.footer {
+  width:100%;
+  height: 252px;
+  background-color: var(--second-background-color);
+}
 
 .footer-logo {
   margin-top: 60px;
